@@ -11,16 +11,16 @@ module associative_mtd;
     end
 
     if (assoc.first(idx))
-      $display("First  : %0d = %0d", idx, assoc[idx]);
+      $display("First value : %0d = %0d", idx, assoc[idx]);
 
     if (assoc.next(idx))
-      $display("Next   : %0d = %0d", idx, assoc[idx]);
+      $display("Next value : %0d = %0d", idx, assoc[idx]);
 
     if (assoc.last(idx))
-      $display("Last   : %0d = %0d", idx, assoc[idx]);
+      $display("Last value  : %0d = %0d", idx, assoc[idx]);
 
     if (assoc.prev(idx))
-      $display("Prev   : %0d = %0d", idx, assoc[idx]);
+      $display("Prev value  : %0d = %0d", idx, assoc[idx]);
   end
 
 endmodule
