@@ -1,3 +1,5 @@
+// 02. Declare a global queue - "push_data" task should push date into the queue and "remove_data" task should pop data from the queue.
+
 module queue_example;
   int a[$];
   
