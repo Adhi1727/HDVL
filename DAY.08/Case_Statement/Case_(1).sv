@@ -10,7 +10,7 @@ module case_epl;
         2'b10: out = 0;
         default: out = 1;
       endcase
-      $display("Output = %0d", out);
+      $display("Out = %0d", out);
     end
 endmodule
 
