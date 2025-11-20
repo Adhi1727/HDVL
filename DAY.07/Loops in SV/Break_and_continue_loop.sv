@@ -1,4 +1,4 @@
-module loop_brak_continue_106;
+module break_and_continue;
   int array[12];
   initial begin
     //array elements 
