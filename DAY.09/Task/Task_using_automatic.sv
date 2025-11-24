@@ -1,4 +1,4 @@
-module task_using_automatic_113;
+module task_using_automatic;
   logic [7:0]count;
   logic [7:0]count_1;
   initial begin
