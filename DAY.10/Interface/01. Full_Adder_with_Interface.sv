@@ -30,7 +30,7 @@ module tb_top;
     #1;inf.a = 0; inf.b = 1; inf.c = 1;
   end
 endmodule
-/*
+/* o/p:
 # KERNEL: a=1 b=0 c=0,sum=1,carry=0
 # KERNEL: a=1 b=1 c=1,sum=1,carry=1
 # KERNEL: a=0 b=1 c=1,sum=0,carry=1
