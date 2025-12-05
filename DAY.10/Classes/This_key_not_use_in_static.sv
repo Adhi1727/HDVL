@@ -19,4 +19,27 @@ endmodule
 /*
 ERROR VCP5239 "Keyword 'this' can be used only inside non-static class methods." "testbench.sv" 8  16
 ERROR VCP5239 "Keyword 'this' can be used only inside non-static class methods." "testbench.sv" 9  14
-FAILURE "Compile failure 3 Errors 0 Warnings  Analysis time: 0[s]."
+FAILURE "Compile failure 3 Errors 0 Warnings  Analysis time: 0[s]."*/
+// ****************** USED IN NON-STATIC METHOD *******************
+class transcation;
+   bit [31:0] data;
+   int id;
+  
+  function static assign_val(bit [31:0] data, int id);
+    this.data = data; 
+    this.id = id;
+  endfunction
+endclass
+
+module example;
+  transcation tr;
+  initial begin
+    tr = new();
+    tr.assign_val(6,1);
+    $display("values of data = %0d, id = %0d",tr.data,tr.id); 
+  end
+endmodule
+/*
+# KERNEL: values of data = 6, id = 1
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+# VSIM: Simulation has finished.
