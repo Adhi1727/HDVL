@@ -5,7 +5,7 @@ module example;
     q = new[5];
     q='{5,10,15,20,25};
     foreach (q[i]) begin
-      $display("q",i,q[i]);
+      $display("q [%0d] = %0d",i,q[i]);
     end
     $display("Size of q = %0d", q.size());
     q.shuffle();
@@ -13,11 +13,11 @@ module example;
   end
 endmodule
 /*
-Compiler version U-2023.03-SP2_Full64; Runtime version U-2023.03-SP2_Full64;  Dec  6 09:16 2025
-q          0          5
-q          1         10
-q          2         15
-q          3         20
-q          4         25
+Compiler version U-2023.03-SP2_Full64; Runtime version U-2023.03-SP2_Full64;  Dec  6 09:18 2025
+q [0] = 5
+q [1] = 10
+q [2] = 15
+q [3] = 20
+q [4] = 25
 Size of q = 5
 After shuffle = '{20, 10, 25, 5, 15} 
