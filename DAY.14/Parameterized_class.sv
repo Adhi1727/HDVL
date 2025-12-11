@@ -1,4 +1,5 @@
 // Parametrization in sv refers to the ability to define modules or classes with parameters that can be customized at instantiation timme!...
+// Above code is parametrization type which is "parameterized by value" method
 class packet #(parameter WIDTH=4); // Declare parameter width which can be modifed using class name
   bit [WIDTH-1:0] data;
   
